@@ -1,8 +1,8 @@
-module top #(parameter M=16)
+module top #(parameter N=16)
 (
   input clk,
-  input [M-1:0] a,b,
-  output [M-1:0] c
+  input [N-1:0] a,b,
+  output [N-1:0] c
  );
  
  assign c = clk ? a : b;
